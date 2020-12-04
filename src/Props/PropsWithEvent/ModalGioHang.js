@@ -99,7 +99,8 @@ export default class ModalGioHang extends Component {
                                         <tr>
                                             <td colSpan="5"></td>
                                             <td>Tổng tiền:</td>
-                                            <td>{this.props.gH.reduce((tongTien, GHCHON) => { return tongTien += GHCHON.soLuong * GHCHON.giaBan }, 0).toLocaleString()}</td>
+                                            {/* <td>{this.props.gH.reduce((tongTien, GHCHON) => { return tongTien += GHCHON.soLuong * GHCHON.giaBan }, 0).toLocaleString()}</td> */}
+                                            <td>{gH.reduce((tongTien, GioHangChon) => { return tongTien += GioHangChon.soLuong * GioHangChon.giaBan }, 0).toLocaleString()}</td>
                                         </tr>
                                     </tfoot>
                                 </table>
