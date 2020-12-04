@@ -99,7 +99,7 @@ export default class ModalGioHang extends Component {
                                         <tr>
                                             <td colSpan="5"></td>
                                             <td>Tổng tiền:</td>
-                                            {/* <td>{ gH.reduce((tongTien, ccccc, index) => { return tongTien += ccccc.soLuong * ccccc.giaBan }) }</td> */}
+                                            <td>{this.props.gH.reduce((tongTien, GHCHON) => { return tongTien += GHCHON.soLuong * GHCHON.giaBan }, 0)}</td>
                                         </tr>
                                     </tfoot>
                                 </table>
